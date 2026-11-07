@@ -1,0 +1,15 @@
+# Install PyTorch FIRST with CUDA (RTX 4060):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# (CPU-only alternative: pip install torch torchvision)
+numpy>=1.26
+opencv-python>=4.9
+scikit-image>=0.22
+scipy>=1.11
+pandas>=2.1
+matplotlib>=3.8
+pillow>=10.0
+pyiqa>=0.1.13        # NIQE, BRISQUE, LPIPS (downloads metric weights on first use)
+piq>=0.8             # BRISQUE fallback
+lpips>=0.1.4         # LPIPS backbone (AlexNet)
+streamlit==1.67.0
+pytest>=8.0
